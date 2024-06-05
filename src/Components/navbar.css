@@ -1,0 +1,68 @@
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.container.nav-content {
+    justify-content: flex-end !important;
+
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content li {
+    margin: 0 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff !important;
+    position: relative;
+}
+
+.nav-item {
+    position: relative;
+    /* Add this to create a positioning context for the pseudo-element */
+}
+
+.nav-item::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+    opacity: 1;
+
+}
