@@ -13,8 +13,11 @@ const Navbar = () => {
     <div>
       <MobileNav isOpen={openManu} toggleMenu={toggleMenu} />
 
-      <nav className="navbar navbar-expand-lg nav-wrapper">
+      <nav className="navbar navbar-expand-lg">
         <div className="container nav-content">
+          <a className="navbar-brand" href="/#">
+            ZAIN ALI
+          </a>
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="/#">

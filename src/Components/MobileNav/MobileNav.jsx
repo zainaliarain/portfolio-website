@@ -9,6 +9,9 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
       >
         <div className="mobile-menu-contianer">
           <ul>
+            <a className="navbar-brand" href="/#">
+              ZAIN ALI
+            </a>
             <li className="nav-item">
               <a className="nav-link" href="/#">
                 Home

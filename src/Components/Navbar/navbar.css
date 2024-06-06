@@ -1,28 +1,46 @@
-/* .nav-wrapper {
+.navbar {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0 !important;
+  margin: 0 2.5rem;
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(50px);
-} */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* backdrop-filter: blur(50px) !important; */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2rem !important;
+
+
+}
 
 .nav-content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1rem;
 }
 
-.container.nav-content {
+/* .container.nav-content {
   justify-content: flex-end !important;
-}
+} */
 
 .nav-content ul {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.5rem;
   list-style: none;
   margin: 0;
@@ -31,6 +49,7 @@
 
 .nav-content li {
   margin: 0 1.5rem;
+  position: relative;
 }
 
 .nav-link {
@@ -41,10 +60,10 @@
   position: relative;
 }
 
-.nav-item {
+/* .nav-item {
   position: relative;
-  /* Add this to create a positioning context for the pseudo-element */
-}
+
+} */
 
 .nav-item::before {
   content: " ";
@@ -63,6 +82,7 @@
   width: 100%;
   opacity: 1;
 }
+
 .contact-btn {
   font-size: 0.9rem;
   font-weight: 500;
@@ -78,6 +98,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .contact-btn:hover {
   color: #a993fe;
   background: #000;
@@ -111,12 +132,14 @@
   .menu-btn {
     display: block;
   }
+
   .nav-content ul {
     display: none;
   }
 }
+
 @media (max-width: 1325) {
-  .nav-wrapper {
-    padding: 0 2rem;
+  .navbar {
+    padding: 0 2.5rem;
   }
 }

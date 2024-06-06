@@ -24,6 +24,7 @@
   opacity: 1;
   transform: translateX(0);
 }
+
 .mobile-menu ul {
   display: flex;
   flex-direction: column;
