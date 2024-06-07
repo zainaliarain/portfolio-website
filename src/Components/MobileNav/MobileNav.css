@@ -1,7 +1,7 @@
 .mobile-menu {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
-  display: none;
+  /* display: none; */
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   left: 0;
@@ -14,7 +14,8 @@
 }
 
 .mobile-menu-container {
-  width: 60vw; /* Adjust this width as needed */
+  width: 60vw;
+  /* Adjust this width as needed */
   height: 1300vh;
   background-color: #342864;
   padding: 2rem;
@@ -39,10 +40,4 @@
   position: absolute;
   /* top: 50%; */
   transform: translateY(-50%);
-}
-
-@media (max-width: 766px) {
-  .mobile-menu {
-    display: block;
-  }
 }

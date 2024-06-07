@@ -1,13 +1,17 @@
 /* The main container class */
 .container {
-  max-width: 1300px !important; /* Ensures the maximum width is 1300px */
-  margin: 0 auto; /* Centers the container horizontally */
-  position: relative; /* Sets the position to relative for positioning context */
+    max-width: 1300px !important;
+    /* Ensures the maximum width is 1300px */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    position: relative;
+    /* Sets the position to relative for positioning context */
 }
 
 /* Media query for screens with a maximum width of 1300px */
 @media (max-width: 1300px) {
-  .container {
-    padding: 0 0.5rem; /* Adds padding to the left and right to prevent content from touching the edges */
-  }
+    .container {
+        padding: 0 0.5rem;
+        /* Adds padding to the left and right to prevent content from touching the edges */
+    }
 }

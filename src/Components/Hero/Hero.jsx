@@ -1,10 +1,10 @@
 import React from "react";
 import "./Hero.css";
-import reactImg from "../../images/react1.png";
+import reactIcon from "../../images/react1.png";
 import profileImg from "../../images/profile.jpeg";
-import htmlImg from "../../images/html.png";
-import cssImg from "../../images/css.png";
-import jsImg from "../../images/Js.png";
+import htmlIcon from "../../images/html.png";
+import cssIcon from "../../images/css.png";
+import jsIcon from "../../images/Js.png";
 
 const Hero = () => {
   return (
@@ -18,24 +18,21 @@ const Hero = () => {
               Stunning Web Solutions
             </p>
           </div>
-
-          <div className="col-lg-6">
-            <div className="hero-img">
-              <div>
-                <div className="tech-icon">
-                  <img src={htmlImg} alt="HTML" />
-                </div>
-                <img src={profileImg} alt="Profile" />
+          <div className="col-lg-6 hero-img">
+            <img src={profileImg} alt="Profile" />
+            <div className="tech-icons">
+              <div className="tech-icon react-icon">
+                <img src={reactIcon} alt="React" />
               </div>
-              <div>
+              <div className="other-icons">
                 <div className="tech-icon">
-                  <img src={cssImg} alt="CSS" />
+                  <img src={htmlIcon} alt="HTML" />
                 </div>
                 <div className="tech-icon">
-                  <img src={jsImg} alt="JavaScript" />
+                  <img src={cssIcon} alt="CSS" />
                 </div>
                 <div className="tech-icon">
-                  <img src={reactImg} alt="React Logo" className="react-img" />
+                  <img src={jsIcon} alt="JavaScript" />
                 </div>
               </div>
             </div>
