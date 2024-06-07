@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: none;
-  background-color: rgba(o, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   left: 0;
   top: 0;
@@ -13,9 +13,9 @@
   transform: translateX(-100vw);
 }
 
-.mobile-menu-contianer {
-  width: 60vw;
-  height: 100vh;
+.mobile-menu-container {
+  width: 60vw; /* Adjust this width as needed */
+  height: 1300vh;
   background-color: #342864;
   padding: 2rem;
 }
@@ -31,9 +31,17 @@
   gap: 2rem;
   list-style: none;
   margin-left: -2rem;
+  margin-top: 1.5rem;
 }
 
-@media (max-width: 769px) {
+/* Adjust the hamburger icon styling */
+.mobile-menu .navbar-brand {
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(-50%);
+}
+
+@media (max-width: 766px) {
   .mobile-menu {
     display: block;
   }

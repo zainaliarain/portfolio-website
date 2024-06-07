@@ -3,15 +3,15 @@ import "./navbar.css";
 import MobileNav from "../MobileNav/MobileNav";
 
 const Navbar = () => {
-  const [openManu, setOpenManu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
-    setOpenManu(!openManu);
+    setOpenMenu(!openMenu);
   };
 
   return (
     <div>
-      <MobileNav isOpen={openManu} toggleMenu={toggleMenu} />
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
       <nav className="navbar navbar-expand-lg">
         <div className="container nav-content">
@@ -19,38 +19,37 @@ const Navbar = () => {
             ZAIN ALI
           </a>
           <ul className="navbar-nav">
-            <li className="nav-item">
+            <li className="nav-item" key="home">
               <a className="nav-link" href="/#">
                 Home
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" key="skills">
               <a className="nav-link" href="/#">
                 Skills
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" key="work-experience">
               <a className="nav-link" href="/#">
                 Work Experience
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" key="contact-me">
               <a className="nav-link" href="/#">
                 Contact Me
               </a>
             </li>
-
-            <button className="btn-primary contact-btn" onClick={() => {}}>
-              Hire Me
-            </button>
+            <li key="hire-me">
+              <button className="btn-primary contact-btn">Hire Me</button>
+            </li>
           </ul>
 
           <button className="menu-btn" onClick={toggleMenu}>
             <span
-              className={"material-symbols-outlined"}
+              className="material-symbols-outlined"
               style={{ fontSize: "1.8rem" }}
             >
-              {openManu ? "close" : "menu"}
+              {openMenu ? "close" : "menu"}
             </span>
           </button>
         </div>
