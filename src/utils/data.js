@@ -45,7 +45,7 @@ export const SKILLS = [
 export const WORK_EXPERIENCE = [
   {
     title: "Customer Support Executive",
-    data: "june 2023 - Present",
+    date: "june 2023 - Present",
     responsibilities: [
       "Configured and maintained VOIP networks (PBX, Asterisk, VICIdial) for over 100+ systems, resolving 95% of technical issues efficiently.",
       "Experienced in developing and testing VOIP applications (Eyebeam, WebRTC, Zoiper) and providing efficient customer support.",
@@ -54,7 +54,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     title: "Frontend Developer",
-    data: "january 2021 - Present",
+    date: "january 2021 - Present",
     responsibilities: [
       "Collaborated with 14+ clients to design and develop over 15+ responsive and user-friendly websites, enhancing user experience across different devices.",
       "Implemented frontend frameworks such as React to create dynamic and interactive web applications.",
