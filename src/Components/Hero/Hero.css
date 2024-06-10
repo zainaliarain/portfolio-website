@@ -1,242 +1,331 @@
 .hero-container {
-    padding: 2rem 0;
-    /* Example padding, adjust as needed */
+  padding: 0 0 6rem 0;
+
+  /* Example padding, adjust as needed */
 }
 
 .hero-container::after,
 .hero-container::before {
-    content: "";
-    width: 28.125rem;
-    height: 28.125rem;
-    border-radius: 28.125rem;
-    background: #7c66e3;
-    position: absolute;
-    z-index: -1;
-    filter: blur(225px);
+  content: "";
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 28.125rem;
+  background: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
 }
 
 .hero-container::after {
-    top: 0rem;
-    left: 4rem;
+  top: 0rem;
+  left: 4rem;
 }
 
 .hero-container::before {
-    bottom: 1rem;
-    right: 9rem;
+  bottom: 1rem;
+  right: 9rem;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
 }
 
 .hero-content h2 {
-    font-size: 3.8rem;
-    font-weight: 600;
-    line-height: 5rem;
-    margin-top: 5%;
-    margin-bottom: 1rem;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-top: 5%;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
-    width: 80%;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .hero-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .hero-img img {
-    border-radius: 15%;
-    width: 19rem;
-    height: 20rem;
-    position: relative;
-    transition: transform 0.3s ease;
+  border-radius: 15%;
+  width: 19rem;
+  height: 20rem;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
 .hero-img img:hover {
-    transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
 }
 
 .tech-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .tech-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .tech-icon img {
-    width: 3rem;
-    height: 3rem;
-    transition: transform 0.3s ease;
-    border-radius: 0.65rem;
-    position: relative;
-    z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+  border-radius: 0.65rem;
+  position: relative;
+  z-index: 1;
 }
 
 .tech-icon::before {
-    content: '';
-    position: absolute;
-    top: -0.5rem;
-    left: -0.5rem;
-    right: -0.5rem;
-    bottom: -0.5rem;
-    border: 1.5px solid #6852ba;
-    border-radius: 0.65rem;
-    z-index: 0;
-    transition: border-color 0.3s ease;
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
+  border: 1.5px solid #6852ba;
+  border-radius: 0.65rem;
+  z-index: 0;
+  transition: border-color 0.3s ease;
 }
 
 .tech-icon:hover::before {
-    border-color: #6852ba;
-    /* Adjust the border color on hover if needed */
+  border-color: #6852ba;
+  /* Adjust the border color on hover if needed */
 }
 
 .tech-icon img:hover {
-    transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
 }
 
 .react-icon {
-    position: absolute;
-    bottom: 2rem;
-    left: 16rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 16rem;
 }
 
 .other-icons {
+  position: absolute;
+  bottom: -4rem;
+  left: 20rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: start;
+  /* width: 100%; */
+}
+
+@media (max-width: 1025px) {
+  .hero-container h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .hero-container p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+
+  /* .hero-img > tecj > img {
+    width: 20rem;
+  } */
+
+  .tech-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tech-icons img {
+    width: 2.5rem;
+  }
+
+  .react-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .other-icons img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .other-icons {
     position: absolute;
-    bottom: -4rem;
-    left: 20rem;
+    bottom: -0.5rem;
+    left: 12rem;
     display: flex;
     gap: 3rem;
     justify-content: start;
-    /* width: 100%; */
+  }
+
+  .react-icon {
+    position: absolute;
+    bottom: 4.5rem;
+    left: 8.5rem;
+  }
 }
 
-@media(max-width: 1025px) {
-    .hero-container h2 {
-        font-size: 3rem;
-        line-height: 4rem;
-    }
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
 
-    .hero-container p {
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-    }
+  .hero-img {
+    margin: 2rem 0 2rem 0;
+  }
 
-    .hero-img>div>img {
-        width: 20rem;
-    }
+  .hero-container h2 {
+    margin-top: -1rem;
+  }
 
-    .tech-icons {
-        width: 3rem;
-        height: 3rem;
+  .hero-container h2,
+  .hero-container p {
+    width: auto;
+    text-align: center;
+  }
 
-    }
+  .hero-container::after,
+  .hero-container::before {
+    content: " ";
+    width: 18rem;
+    height: 18rem;
+  }
 
-    .tech-icons img {
-        width: 2.5rem;
-    }
+  .hero-container::after {
+    top: 0;
+    left: 0;
+  }
 
-    .react-icon {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
+  .hero-container::before {
+    bottom: 2rem;
+    right: 0rem;
+  }
 
-    .other-icons img {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
+  .hero-img {
+    top: 2rem;
+    align-items: center;
+  }
 
-    .other-icons {
-        position: absolute;
-        bottom: -0.5rem;
-        left: 12rem;
-        display: flex;
-        gap: 3rem;
-        justify-content: start;
+  .other-icons {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 14rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: start;
+  }
 
-    }
+  .react-icon {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 11rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-container h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .hero-container p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .hero-img .tech-icons {
+    gap: 1rem;
+  }
+  .hero-img .tech-icons img {
+    width: 16rem;
+  }
 
-    .react-icon {
-        position: absolute;
-        bottom: 4.5rem;
-        left: 8.5rem;
-    }
+  .tech-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .tech-icons img {
+    width: 2rem;
+  }
+  .hero-img {
+    top: 2rem;
+    right: 1.5rem;
+    align-items: end;
+  }
 
+  .other-icons {
+    position: absolute;
+    bottom: -0.3rem;
+    left: 7rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: start;
+  }
+
+  .react-icon {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 3.5rem;
+  }
 }
 
-@media(max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-    }
+@media (max-width: 400px) {
+  .hero-container h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero-container p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    width: 18rem auto;
+  }
+  /* .hero-img .tech-icons {
+    gap: 0.5rem;
+  } */
+  .hero-img .tech-icons img {
+    width: 12rem;
+  }
+  .hero-img > img {
+    /* top: 2rem; */
+    width: 15rem;
+    height: 16rem;
+  }
+  .tech-icon {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .tech-icons img {
+    width: 2rem;
+  }
 
-    .hero-img {
-        margin: 2rem 0 2rem 0;
-    }
+  .hero-img {
+    top: 2rem;
+    right: 1rem;
+    align-items: end;
+  }
 
-    .hero-container h2 {
-        margin-top: -1rem;
-    }
+  .other-icons {
+    position: absolute;
+    bottom: -0.1rem;
+    left: 5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: start;
+  }
 
-    .hero-container h2,
-    .hero-container p {
-        width: auto;
-        text-align: center;
-    }
-
-    .hero-container::after,
-    .hero-container::before {
-        content: " ";
-        width: 18rem;
-        height: 18rem;
-    }
-
-    .hero-container::after {
-        top: 0;
-        left: 0;
-
-    }
-
-    .hero-container::before {
-
-        bottom: 2rem;
-        right: 0rem;
-    }
-
-    .hero-img {
-        top: 2rem;
-        align-items: center;
-    }
-
-    .other-icons {
-        position: absolute;
-        bottom: -0.5rem;
-        left: 14rem;
-        display: flex;
-        gap: 3rem;
-        justify-content: start;
-    }
-
-
-
-    .react-icon {
-        position: absolute;
-        bottom: 5.5rem;
-        left: 11rem;
-    }
+  .react-icon {
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
+  }
 }
