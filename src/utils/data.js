@@ -53,10 +53,10 @@ export const WORK_EXPERIENCE = [
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend Developer (Freelancer)",
     date: "january 2021 - Present",
     responsibilities: [
-      "Collaborated with 14+ clients to design and develop over 15+ responsive and user-friendly websites, enhancing user experience across different devices.",
+      "Collaborated with 14+ clients to design and develop over 7+ responsive and user-friendly websites, enhancing user experience across different devices.",
       "Implemented frontend frameworks such as React to create dynamic and interactive web applications.",
       "Collaborated with designers to ensure the implementation of visually appealing and consistent UI/UX designs.",
     ],
