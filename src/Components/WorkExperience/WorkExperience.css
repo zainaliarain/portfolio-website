@@ -40,6 +40,33 @@
   right: -2rem;
 }
 
+/* Container for the experience section */
+/* .experience-container {
+  position: relative;
+} */
+
+/* Styling for the slick dots */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  /* Adjust this value to position the dots where you want them */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li button::before {
+  font-size: 20px !important;
+
+  color: #A58FFC !important;
+
+}
+
+.slick-dots li.slick-active button::before {
+  color: #7e61e7 !important;
+
+}
+
 @media (max-width: 1025px) {
   .arrow-left {
     left: 0.5rem;
@@ -66,9 +93,11 @@
 }
 
 @media (max-width: 600px) {
+
   .arrow-left,
   .arrow-right {
-    position: absolute;
-    top: 50%;
+    /* position: absolute;
+    top: 50%; */
+    display: none;
   }
 }

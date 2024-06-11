@@ -3,10 +3,11 @@ import "./WorkExperience.css";
 import { WORK_EXPERIENCE } from "../../utils/data";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import Slider from "react-slick";
+
 const WorkExperience = () => {
   const sliderRef = useRef();
   const settings = {
-    dots: false,
+    dots: true, // Enable dots
     infinite: true,
     speed: 500,
     slidesToShow: 2,

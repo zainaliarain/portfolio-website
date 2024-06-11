@@ -6,7 +6,7 @@
   background: #130f2a;
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
-  padding: 1.5rem;
+  padding: 0.2rem;
   margin-bottom: 2rem;
 }
 
@@ -21,13 +21,19 @@
   margin-bottom: 0.8rem;
 }
 
+.icon {
+  margin-top: 1.5rem;
+}
+
 .icon img {
   width: 1.8rem;
   height: auto;
   object-fit: contain;
+
 }
 
 .contact-details-card p {
   font-size: 0.9rem;
   font-weight: 400;
+  margin-top: 0.9rem;
 }

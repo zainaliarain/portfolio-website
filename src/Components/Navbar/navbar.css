@@ -2,22 +2,14 @@
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
   padding: 0.5rem 0 !important;
-  /* Padding for top and bottom */
   margin: 0;
-  /* Margin for left and right */
   position: sticky;
   top: 0;
   z-index: 30;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
   backdrop-filter: blur(50px) !important;
-}
-
-.navbar-nav {
-  display: flex;
-  align-items: center;
 }
 
 .navbar-brand {
@@ -55,12 +47,8 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: #fff !important;
-  position: relative;
+  /* position: relative; */
 }
-
-/* .nav-item {
-  position: relative;
-} */
 
 .nav-item::before {
   content: " ";
