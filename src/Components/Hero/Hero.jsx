@@ -8,7 +8,7 @@ import jsIcon from "../../images/Js.png";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section className="hero-container" id="home">
       <div className="container hero-content">
         <div className="row">
           <div className="col-lg-6 content">

@@ -5,6 +5,7 @@ import Hero from "./Components/Hero/Hero";
 import Skills from "./Components/Skills/Skills";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import ContactMe from "./Components/ContactMe/ContactMe";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
         <Skills />
         <WorkExperience />
         <ContactMe />
+        <Footer />
       </div>
     </div>
   );

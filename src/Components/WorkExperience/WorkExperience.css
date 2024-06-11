@@ -40,7 +40,7 @@
   right: -2rem;
 }
 
-@media(max-width: 1025px) {
+@media (max-width: 1025px) {
   .arrow-left {
     left: 0.5rem;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media(max-width: 786px) {
+@media (max-width: 786px) {
   .experience-container h5 {
     font-size: 1.3rem;
     margin-bottom: 2rem;
@@ -65,13 +65,10 @@
   }
 }
 
-@media(max-width: 600px) {
-
+@media (max-width: 600px) {
   .arrow-left,
   .arrow-right {
-
     position: absolute;
     top: 50%;
-
   }
 }
