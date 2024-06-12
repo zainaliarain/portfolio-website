@@ -16,22 +16,22 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
               </a>
             </li>
             <li className="nav-item" key="home">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#home">
                 Home
               </a>
             </li>
             <li className="nav-item" key="skills">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#skills">
                 Skills
               </a>
             </li>
             <li className="nav-item" key="work-experience">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#work">
                 Work Experience
               </a>
             </li>
             <li className="nav-item" key="contact-me">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#contact-me">
                 Contact Me
               </a>
             </li>

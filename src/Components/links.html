@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate and Download Links</title>
+</head>
+
+<body>
+    <h2>Generated Links</h2>
+    <textarea id="filePathsInput" rows="10" cols="50"
+        placeholder="Enter file paths here, each on a new line..."></textarea>
+    <br>
+    <button onclick="generateAndDisplayLinks()">Generate Links</button>
+    <button onclick="downloadLinks()">Download Links</button>
+    <h3>Links:</h3>
+    <div id="linksOutput"></div>
+    <br>
+
+    <script>
+        // Define the base URL where the files are hosted
+        const baseURL = "http://5.75.231.252/RECORDINGS/MP3/";
+
+        let generatedLinks = []; // Store the generated links
+
+        // Function to generate links
+        function generateLinks(baseURL, filePaths) {
+            const links = [];
+            filePaths.forEach((filePath) => {
+                // Extract the file name from the full path
+                const fileName = filePath.split('/').pop();
+                links.push(`${baseURL}${fileName}`);
+            });
+            return links;
+        }
+
+        // Function to generate and display links
+        function generateAndDisplayLinks() {
+            const filePathsInput = document.getElementById('filePathsInput').value;
+            const filePaths = filePathsInput.split('\n').map(path => path.trim()).filter(path => path.length > 0);
+            generatedLinks = generateLinks(baseURL, filePaths); // Store the generated links
+            const linksOutput = document.getElementById('linksOutput');
+            linksOutput.innerHTML = ''; // Clear previous output
+
+            generatedLinks.forEach((link) => {
+                const linkElement = document.createElement('a');
+                linkElement.href = link;
+                linkElement.textContent = link;
+                linkElement.target = '_blank';
+                linksOutput.appendChild(linkElement);
+                linksOutput.appendChild(document.createElement('br'));
+            });
+        }
+
+        // Function to download links as a text file
+        function downloadLinks() {
+            if (generatedLinks.length === 0) {
+                alert('No links to download. Please generate links first.');
+                return;
+            }
+            const blob = new Blob([generatedLinks.join('\n')], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'links.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+
+</html>
