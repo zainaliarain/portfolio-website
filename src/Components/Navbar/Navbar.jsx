@@ -9,6 +9,13 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
+  const handleHireMeClick = () => {
+    const contactSection = document.getElementById("form");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -58,7 +65,12 @@ const Navbar = () => {
               </a>
             </li>
             <li key="hire-me">
-              <button className="btn-primary contact-btn">Hire Me</button>
+              <button
+                className="btn-primary contact-btn"
+                onClick={handleHireMeClick}
+              >
+                Hire Me
+              </button>
             </li>
           </ul>
 
