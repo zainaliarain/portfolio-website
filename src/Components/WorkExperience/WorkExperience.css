@@ -49,22 +49,30 @@
 .slick-dots {
   position: absolute;
   bottom: -25px;
-  /* Adjust this value to position the dots where you want them */
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+.slick-dots li {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
 .slick-dots li button::before {
-  font-size: 20px !important;
-
-  color: #A58FFC !important;
-
+  font-size: 12px !important;
+  color: #a58ffc !important;
+  transition: color 0.3s ease;
 }
 
 .slick-dots li.slick-active button::before {
   color: #7e61e7 !important;
+}
 
+.slick-dots li.slick-active {
+  transform: scale(1.5);
 }
 
 @media (max-width: 1025px) {
@@ -93,7 +101,6 @@
 }
 
 @media (max-width: 600px) {
-
   .arrow-left,
   .arrow-right {
     /* position: absolute;

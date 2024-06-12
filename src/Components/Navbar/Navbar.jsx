@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import MobileNav from "../MobileNav/MobileNav";
 
@@ -9,8 +9,26 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("shrink");
+      } else {
+        navbar.classList.remove("shrink");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div className="nav-main">
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
       <nav className="navbar navbar-expand-lg">
@@ -25,17 +43,17 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item" key="skills">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#skill">
                 Skills
               </a>
             </li>
             <li className="nav-item" key="work-experience">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#work">
                 Work Experience
               </a>
             </li>
             <li className="nav-item" key="contact-me">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#contact-me">
                 Contact Me
               </a>
             </li>

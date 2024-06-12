@@ -3,13 +3,21 @@
   color: #fff;
   padding: 0.5rem 0 !important;
   margin: 0;
-  position: sticky;
+  position: fixed !important;
   top: 0;
+  width: 100%;
   z-index: 30;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(50px) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar.shrink {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  padding: 0;
 }
 
 .navbar-brand {
@@ -122,9 +130,7 @@
   .nav-content ul {
     display: none;
   }
-
 }
-
 
 @media (max-width: 1325px) {
   .navbar {
