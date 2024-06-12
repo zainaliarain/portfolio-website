@@ -9,31 +9,6 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
-  const handleHireMeClick = () => {
-    const contactSection = document.getElementById("form");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 50) {
-        navbar.classList.add("shrink");
-      } else {
-        navbar.classList.remove("shrink");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="nav-main">
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
