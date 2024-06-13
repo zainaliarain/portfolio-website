@@ -62,17 +62,13 @@
 }
 
 .slick-dots li button::before {
-  font-size: 20px !important;
-
+  font-size: 12px !important;
   color: #a58ffc !important;
+  transition: color 0.3s ease;
 }
 
 .slick-dots li.slick-active button::before {
   color: #7e61e7 !important;
-}
-
-.slick-dots li.slick-active {
-  transform: scale(1.5);
 }
 
 .slick-dots li.slick-active {

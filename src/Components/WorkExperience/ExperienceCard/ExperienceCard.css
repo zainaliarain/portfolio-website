@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.work-experience-cardul li::after {
+.work-experience-card ul li::after {
   content: " ";
   width: 0.5rem;
   height: 0.5rem;

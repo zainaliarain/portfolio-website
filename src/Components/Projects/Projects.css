@@ -1,6 +1,6 @@
 .project-container {
   margin: 4rem 0;
-  margin-top: 10rem;
+  margin-top: 8rem;
   position: relative;
 }
 
@@ -8,4 +8,10 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

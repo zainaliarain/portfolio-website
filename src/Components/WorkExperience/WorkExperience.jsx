@@ -15,8 +15,18 @@ const WorkExperience = () => {
     arrows: false,
     responsive: [
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 769,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
     ],
   };

@@ -2,6 +2,13 @@ import React from "react";
 import "./MobileNav.css";
 
 export const MobileNav = ({ isOpen, toggleMenu }) => {
+  const handleHireMeClick = () => {
+    const contactSection = document.getElementById("form");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <div
@@ -36,7 +43,12 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
               </a>
             </li>
             <li key="hire-me">
-              <button className="btn-primary contact-btn">Hire Me</button>
+              <button
+                className="btn-primary contact-btn"
+                onClick={handleHireMeClick}
+              >
+                Hire Me
+              </button>
             </li>
           </ul>
         </div>

@@ -1,9 +1,14 @@
 import React from "react";
+import "./ProjectsCard.css";
 
-const ProjectsCard = () => {
+const ProjectsCard = ({ imgURL, link }) => {
   return (
-    <div className="project-info-card">
-      <h4>project info</h4>
+    <div className="project-card">
+      <div className="project-info">
+        <div className="project-img">
+          <img src={imgURL} alt="Project" />
+        </div>
+      </div>
     </div>
   );
 };
