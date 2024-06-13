@@ -28,7 +28,6 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -57,6 +56,11 @@ const Navbar = () => {
             <li className="nav-item" key="work-experience">
               <a className="nav-link" href="#work">
                 Experience
+              </a>
+            </li>
+            <li className="nav-item" key="projects">
+              <a className="nav-link" href="#project">
+                Projects
               </a>
             </li>
             <li className="nav-item" key="contact-me">

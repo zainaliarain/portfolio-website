@@ -2,6 +2,7 @@ import frontendIcon from "../images/frontend.png";
 import backendIcon from "../images/backend.png";
 import toolsIcon from "../images/tools.png";
 import softskillsIcon from "../images/softskills.png";
+
 export const SKILLS = [
   {
     title: "Frontend",
@@ -9,16 +10,17 @@ export const SKILLS = [
     skills: [
       { skill: "HTML5", percentage: "81%" },
       { skill: "CSS3", percentage: "80%" },
+      { skill: "Bootstrap", percentage: "80%" }, // Corrected "Bootstap" to "Bootstrap"
       { skill: "JavaScript", percentage: "70%" },
-      { skill: "React.Js", percentage: "80%" },
+      { skill: "React.js", percentage: "80%" }, // Corrected "React.Js" to "React.js"
     ],
   },
   {
     title: "Backend",
     icon: backendIcon,
     skills: [
-      { skill: "Node.Js", percentage: "65%" },
-      { skill: "Express.Js", percentage: "60%" },
+      { skill: "Node.js", percentage: "65%" }, // Corrected "Node.Js" to "Node.js"
+      { skill: "Express.js", percentage: "60%" }, // Corrected "Express.Js" to "Express.js"
     ],
   },
   {
@@ -35,7 +37,7 @@ export const SKILLS = [
     title: "Soft Skills",
     icon: softskillsIcon,
     skills: [
-      { skill: "Problem-Solving", percentage: "80%" },
+      { skill: "Problem-Solving", percentage: "80%" }, // Corrected "Problem-Solving" to "Problem-Solving"
       { skill: "Collaboration", percentage: "85%" },
       { skill: "Attention to Detail", percentage: "75%" },
     ],
@@ -45,7 +47,7 @@ export const SKILLS = [
 export const WORK_EXPERIENCE = [
   {
     title: "Customer Support Executive",
-    date: "june 2023 - Present",
+    date: "June 2023 - Present", // Corrected "june" to "June"
     responsibilities: [
       "Configured and maintained VOIP networks (PBX, Asterisk, VICIdial) for over 100+ systems, resolving 95% of technical issues efficiently.",
       "Experienced in developing and testing VOIP applications (Eyebeam, WebRTC, Zoiper) and providing efficient customer support.",
@@ -54,7 +56,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     title: "Frontend Developer (Freelancer)",
-    date: "january 2021 - Present",
+    date: "January 2021 - Present", // Corrected "january" to "January"
     responsibilities: [
       "Collaborated with 14+ clients to design and develop over 7+ responsive and user-friendly websites, enhancing user experience across different devices.",
       "Implemented frontend frameworks such as React to create dynamic and interactive web applications.",

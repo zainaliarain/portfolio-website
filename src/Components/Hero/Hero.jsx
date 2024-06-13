@@ -22,17 +22,17 @@ const Hero = () => {
             <img src={profileImg} alt="Profile" />
             <div className="tech-icons">
               <div className="tech-icon react-icon">
-                <img src={reactIcon} alt="React" />
+                <img src={reactIcon} alt="React Icon" />
               </div>
               <div className="other-icons">
                 <div className="tech-icon">
-                  <img src={htmlIcon} alt="HTML" />
+                  <img src={htmlIcon} alt="HTML Icon" />
                 </div>
                 <div className="tech-icon">
-                  <img src={cssIcon} alt="CSS" />
+                  <img src={cssIcon} alt="CSS Icon" />
                 </div>
                 <div className="tech-icon">
-                  <img src={jsIcon} alt="JavaScript" />
+                  <img src={jsIcon} alt="JavaScript Icon" />
                 </div>
               </div>
             </div>

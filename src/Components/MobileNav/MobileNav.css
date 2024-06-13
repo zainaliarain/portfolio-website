@@ -1,8 +1,6 @@
 .mobile-menu {
   width: 100vw;
   height: 100vh;
-  /* display: none; */
-  /* background-color: rgba(0, 0, 0, 0.3); */
   position: fixed;
   left: 0;
   top: 0;
@@ -15,7 +13,6 @@
 
 .mobile-menu-container {
   width: 60vw;
-  /* Adjust this width as needed */
   height: 1300vh;
   background-color: #342864;
   padding: 2rem;
@@ -35,9 +32,7 @@
   margin-top: 1.5rem;
 }
 
-/* Adjust the hamburger icon styling */
 .mobile-menu .navbar-brand {
   position: absolute;
-  /* top: 50%; */
   transform: translateY(-50%);
 }

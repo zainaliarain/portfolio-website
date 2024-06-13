@@ -1,6 +1,14 @@
+.work-experiece {
+  margin-top: 8rem;
+  position: relative;
+
+
+}
+
 .experience-container {
   margin: 4rem 0;
   position: relative;
+
 }
 
 .experience-container h5 {
@@ -101,6 +109,7 @@
 }
 
 @media (max-width: 600px) {
+
   .arrow-left,
   .arrow-right {
     /* position: absolute;

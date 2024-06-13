@@ -12,7 +12,7 @@ const Projects = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -42,16 +42,37 @@ const Projects = () => {
     ],
   };
 
-  const projectImgs = [automark, travel, future, korrancy];
+  const projects = [
+    {
+      imgURL: automark,
+      link: "https://www.theautomark.com/",
+    },
+    {
+      imgURL: travel,
+      link: "https://fat-polish.surge.sh/",
+    },
+    {
+      imgURL: future,
+      link: "https://futurealiti.com/",
+    },
+    {
+      imgURL: korrancy,
+      link: "https://kas-demo-live.web.app/",
+    },
+  ];
 
   return (
-    <section>
+    <section className="project-section" id="project">
       <div className="container project-section">
         <div className="project-container">
           <h5>Projects</h5>
           <Slider ref={sliderRef} {...settings}>
-            {projectImgs.map((imgURL, index) => (
-              <ProjectsCard key={index} imgURL={imgURL} />
+            {projects.map((project, index) => (
+              <ProjectsCard
+                key={index}
+                imgURL={project.imgURL}
+                link={project.link}
+              />
             ))}
           </Slider>
         </div>
