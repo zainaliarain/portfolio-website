@@ -43,6 +43,12 @@
   background: transparent;
 }
 
+.status-message {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
 @media (max-width: 450px) {
   .name-container {
     flex-direction: column;

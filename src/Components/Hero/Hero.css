@@ -237,8 +237,6 @@
     margin-bottom: 1rem;
   }
 
-
-
   .hero-container p {
     font-size: 0.8rem;
     line-height: 1.3rem;
@@ -311,7 +309,7 @@
     width: 12rem;
   }
 
-  .hero-img>img {
+  .hero-img > img {
     width: 15rem;
     height: 16rem;
   }
